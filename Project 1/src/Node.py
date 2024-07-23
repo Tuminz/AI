@@ -11,6 +11,7 @@ class Node:
         return self.f_cost < other.f_cost
 
     def getNeighborPos(self, map):
+        map = np.array(map)
         directions = [(0, 1), (1, 0), (0, -1), (-1, 0)] #Right, Down, Left, Up
         neighbors = []
         for d in directions:
